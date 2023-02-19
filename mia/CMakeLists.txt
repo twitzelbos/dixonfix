@@ -13,7 +13,7 @@ add_library(${PROJECT_NAME} STATIC ${SRC})
 set_target_properties(${PROJECT_NAME} PROPERTIES COMPILE_PDB_NAME_DEBUG "${PROJECT_NAME}${CMAKE_DEBUG_POSTFIX}")
 
 target_include_directories(${PROJECT_NAME} PUBLIC "include")
-target_include_directories(${PROJECT_NAME} PUBLIC $ENV{THIRD_PARTY_DIR}/eigen)
+target_include_directories(${PROJECT_NAME} PUBLIC $ENV{EIGEN_DIR}/eigen3)
 
 export(PACKAGE mia)
 export(TARGETS mia
